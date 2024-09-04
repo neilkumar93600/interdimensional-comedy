@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2a2a2a;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-menu img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-menu .dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-menu img:hover + .dropdown,
+.user-menu .dropdown:hover {
+  display: block;
+}
+
+.dropdown a {
+  display: block;
+  color: #f0f0f0;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #444;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #0056b3;
+}
+
+.ai-responses {
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.ai-response {
+  background-color: #444;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.response-text {
+  margin-bottom: 10px;
+}
+
+.response-actions button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.response-actions button:hover {
+  background-color: #0056b3;
+}
